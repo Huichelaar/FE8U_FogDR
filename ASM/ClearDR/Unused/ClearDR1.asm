@@ -1,5 +1,6 @@
 @ Remove DR from an enemy that died after animated battle.
 @ Hooks at 0x32808, in BATTLE_ProbablyMakesTheDeadUnitDissapear (sic).
+@ Unused, because there's a hook that works for both map and animated battle.
 .thumb
 
 push  {r4-r7,r14}

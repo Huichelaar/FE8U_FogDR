@@ -4,9 +4,13 @@ PUSH
 
   // Clear DR-bit from unit that
   // died after animated battle.
-  ORG 0x32808 
+  // Unused. Hook below works for
+  // animated battles as well.
+  /*
+  ORG 0x32808
   callHack_r1(ClearDR1)
-    
+  */
+  
   // Clear DR-bit from unit that
   // died after map battle.
   ORG 0x18400
@@ -33,9 +37,11 @@ PUSH
 
 POP
 
+/*
 ALIGN 4
 ClearDR1:
 #include "ClearDR1.lyn.event"
+*/
 
 ALIGN 4
 ClearDR2:
