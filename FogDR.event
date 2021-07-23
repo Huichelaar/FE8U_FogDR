@@ -58,7 +58,6 @@ PUSH
   
 POP
 
-#include "ASM/ASM.event"
 #include "Graphics/Graphics.event"
-}
+#include "ASM/ASM.event"
 #include "ASMC/ASMC.event"

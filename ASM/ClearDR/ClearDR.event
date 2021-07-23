@@ -14,8 +14,7 @@ PUSH
   // Clear DR-bit from unit that
   // died after map battle.
   ORG 0x18400
-  callHack_r0(ClearDR2)
-  SHORT 0xE00E
+  jumpToHack(ClearDR2)
   PROTECT 0x18400 CURRENTOFFSET
     
   // Clear DRCountByte when

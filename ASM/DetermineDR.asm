@@ -48,8 +48,16 @@ beq   L1
   @ FOW
   ldr   r4, =DeletePlayerPhaseInterface6Cs
   bl    GOTO_R4
+  ldr   r2, =GameState
+  ldr   r4, =0x8027ACB
+  bl    L5
+  L5:
+  mov   r0, #0xA
+  add   r14, r0
+  push  {r4, r14}
+  bl    GOTO_R4                   @ This draw SMS instead of MMS.
   bl    InitializeDR
-  b     L2
+  b     Return
 L1:
 
 
