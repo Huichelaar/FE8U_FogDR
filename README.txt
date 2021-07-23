@@ -134,7 +134,7 @@ CONCLUDING
     behaviour changes).
   I won't have to lose sleep over knowing there're people using my poorly implemented patch anymore.
   
-  July 23d 2021.
+  July 23rd 2021.
     - Turns out there was still a visual error when hovering over a player unit and activating DangerZone 
     during FOW. Considering the exact circumstances that need to happen for this bug to display (I mean, I 
     don't even use FOW), I can see how it slipped under the radar. That's fixed now.
