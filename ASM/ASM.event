@@ -17,9 +17,9 @@ PUSH
   SHORT 0x46C0
   
   // Recalc DR when unit cancels an action.
-  ORG 0x1D028
+  ORG 0x1D014
   callHack_r3(ActionCancelDR)
-  SHORT 0x46C0
+  SHORT 0xE009
 
   // DetermineDR Hook.
 	ORG 0x1CAD4
@@ -77,7 +77,7 @@ PUSH
   
   // Update DR after moving a unit
   // and before committing to an action.
-  ORG 0x1D484
+  ORG 0x1D47C
 	callHack_r0(UpdateDRMove)
   SHORT 0x46C0
   
