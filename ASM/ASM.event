@@ -58,6 +58,8 @@ PUSH
   WORD 0x801A1F9
   ORG 0x1CEA0
   BYTE 0xAB
+  ORG 0x1049C
+  BYTE 0xAD
   
   // Hooked in ApplyStuffToRangeMaps.
   // Makes DR display in fog
